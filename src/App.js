@@ -6,8 +6,8 @@ import Home from './components/Home/Home';
 import QuizeDetails from './components/QuizeDetails/QuizeDetails';
 import Topics from './components/Topics/Topics';
 import Main from './Layouts/Main';
-import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Stat from './components/Stat/Stat';
 
 
 
@@ -33,6 +33,10 @@ function App() {
           loader: ({ params }) =>
             fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
           element: <QuizeDetails></QuizeDetails>
+        },
+        {
+          path: '/stat',
+          element: <Stat></Stat>
         },
         {
           path: '/blog',
