@@ -8,10 +8,10 @@ const Quize = ({ quize }) => {
     return (
         <div >
             <img className='bg-yellow-300' src={logo} alt=""></img>
-            <div className='flex justify-between'>
-                <p>{name}</p>
-                <p>Total Quize:{total}</p>
-                <Link to={`../quize/${id}`}>Start</Link>
+            <div className='flex justify-between bg-gray-300'>
+                <p className='font-bold p-2'>{name}</p>
+                <p className='font-bold p-2'>Total Quize:{total}</p>
+                <Link className='bg-green-500 rounded-md p-2 text-bold font-bold text-white' to={`../quize/${id}`}>Start quize</Link>
             </div>
 
 
